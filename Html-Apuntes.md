@@ -92,3 +92,31 @@ HTML.
 ejecutable.LISTA DE LAS ETIQUETAS MÁS UTILIZADAS
 
 ---
+
+# LISTA DE ALGUNAS ETIQUETAS DE ESTRUCTURACIÓN HTML
+
+<br>
+
+##### SON ETIQUETAS HTML ESTÁNDAR QUE REPRESENTAN ELEMENTOS ESPECÍFICOS DE UNA PÁGINA WEB. ESTOS NO SON NOMBRES ALEATORIOS; ESTÁN DEFINIDOS EN LA ESPECIFICACIÓN DEL LENGUAJE HTML Y TIENEN UN PROPÓSITO CLARO Y DEFINIDO EN LA ESTRUCTURA Y EL CONTENIDO DE UNA PÁGINA WEB.
+
+##### AQUÍ TIENES UNA LISTA DE ALGUNAS ETIQUETAS HTML COMUNES Y SUS USOS:
+
+- `<header>`: Define la cabecera de una página o una sección.
+- `<main>`: Define el contenido principal de una página. Debe haber solo un
+  elemento `<main>` en un documento HTML.
+- `<section>`: Define una sección genérica de contenido dentro de un documento.
+- `<input>`: Se utiliza para crear controles de entrada en formularios web, como
+  campos de texto, casillas de verificación, botones de radio, etc.
+- `<nav>`: Define una sección de navegación que generalmente contiene enlaces a
+  otras páginas o secciones del mismo sitio web.
+- `<footer>`: Define el pie de página de una página o una sección.
+- `<article>`: Define un artículo independiente que puede estar dentro de una
+  página o ser una página por sí mismo.
+- `<aside>`: Define contenido relacionado pero que está separado del contenido
+  principal, como barras laterales o contenidos adicionales.
+- `<div>`: Un contenedor genérico que se utiliza para agrupar elementos y
+  aplicar estilos o manipulaciones de manera más sencilla.
+- `<span>`: Similar al `<div>`, pero en línea, se usa para aplicar estilos a
+  partes específicas del texto sin cambiar la estructura del documento.
+
+##### ESTOS SON SOLO ALGUNOS EJEMPLOS. HAY MUCHAS OTRAS ETIQUETAS HTML QUE SE UTILIZAN PARA ESTRUCTURAR Y ORGANIZAR EL CONTENIDO DE UNA PÁGINA WEB DE MANERA SEMÁNTICA.

@@ -1,0 +1,399 @@
+# **APUNTES CSS**
+
+## <br>
+
+## [**VIDEITOS DE FRONTEND**](https://www.youtube.com/watch?v=u_GIT5MJAtc)
+
+## **LISTA CON LOS TÉRMINOS COMO SE SUELEN USAR EN LOS ARCHIVOS CSS:**
+
+<br>
+
+---
+
+-`Selector`: Selecciona elementos HTML a los que se aplicarán estilos.
+
+Pueden ser selectores de etiquetas, clases, IDs, atributos, etc.
+
+-`Propiedad`: Define la característica de estilo que deseas cambiar, como el
+color, el tamaño, la posición, etc.
+
+-`Valor`: Especifica el valor que deseas asignar a la propiedad seleccionada.
+Por ejemplo, para la propiedad "color", el valor podría ser "red", "#FF0000",
+"rgb(255, 0, 0)", etc.
+
+-`Background`: Establece el fondo de un elemento.
+
+-`Color`: Establece el color del texto.
+
+-`Font-family`: Establece el tipo de fuente que se utilizará para el texto.
+
+-`Font-size`: Establece el tamaño de la fuente.
+
+-`Margin`: Establece márgenes alrededor de un elemento.
+
+-`Padding`: Establece el espacio interior de un elemento.
+
+-`Border`: Establece un borde alrededor de un elemento.
+
+-`Display`: Especifica cómo se muestra un elemento en el diseño de la página.
+
+-`Position`: Especifica el método de posicionamiento de un elemento.
+
+-`Float`: Especifica si un elemento debe flotar a la izquierda, a la derecha o
+no flotar en absoluto.
+
+-`Flexbox`: Un conjunto de propiedades que se utilizan para el diseño flexible
+de elementos en un contenedor.
+
+-`Grid`: Un conjunto de propiedades que se utilizan para el diseño de
+cuadrículas de elementos en un contenedor.
+
+---
+
+## **EJEMPLOS DE ALGUNAS ETIQUTAS**
+
+---
+
+`Selectores`
+
+```css
+/* Selector */
+p {
+  /* Propiedad */
+  color: red; /* Valor */
+}
+
+/* Selector de clase */
+.btn {
+  background: #007bff; /* Valor hexadecimal */
+  color: white; /* Valor */
+  font-family: Arial, sans-serif; /* Valor */
+  font-size: 16px; /* Valor */
+  padding: 10px 20px; /* Valor */
+  border: 1px solid #007bff; /* Valor hexadecimal */
+}
+
+/* Selector de ID */
+#header {
+  display: flex; /* Valor */
+  justify-content: space-between; /* Valor */
+  align-items: center; /* Valor */
+  padding: 20px; /* Valor */
+  background-color: #333; /* Valor hexadecimal */
+  color: white; /* Valor */
+  font-family: "Arial Black", sans-serif; /* Valor */
+}
+
+/* Selector de atributo */
+input[type="text"] {
+  border: 1px solid #ccc; /* Valor hexadecimal */
+  padding: 5px; /* Valor */
+}
+
+/* Selector de pseudoclase */
+a:hover {
+  color: #ff4500; /* Valor hexadecimal */
+}
+
+/* Selector combinado */
+.container div {
+  margin: 10px; /* Valor */
+}
+
+/* Selector descendiente */
+article p {
+  margin-bottom: 20px; /* Valor */
+}
+
+/* Selector hijo */
+ul > li {
+  list-style: none; /* Valor */
+}
+
+/* Selector adyacente */
+h2 + p {
+  font-weight: bold; /* Valor */
+}
+
+/* Selector universal */
+* {
+  box-sizing: border-box; /* Valor */
+}
+```
+
+---
+
+`Propiedades`
+
+```css
+/* Cambiar el color del texto */
+color: rojo;
+
+/* Establecer el tamaño de la fuente */
+font-size: 16px;
+```
+
+---
+
+`Valores`
+
+```css
+/* Usar un color hexadecimal */
+color: #ff0000;
+
+/* Utilizar una fuente específica */
+font-family: Arial, sans-serif;
+```
+
+---
+
+`Background`
+
+```css
+/* Establecer un color de fondo */
+background-color: #f0f0f0;
+
+/* Usar una imagen de fondo */
+background-image: url("imagen.jpg");
+```
+
+---
+
+`Margin`
+
+```css
+/* Establecer márgenes en todos los lados */
+margin: 10px;
+
+/* Especificar márgenes para cada lado */
+margin-top: 10px;
+margin-bottom: 20px;
+margin-left: 5px;
+margin-right: 15px;
+```
+
+---
+
+`Padding`
+
+```css
+/* Establecer relleno en todos los lados */
+padding: 20px;
+
+/* Especificar relleno para cada lado */
+padding-top: 10px;
+padding-bottom: 15px;
+padding-left: 5px;
+padding-right: 5px;
+```
+
+---
+
+`Border`
+
+```css
+/* Establecer un borde sólido */
+border: 1px solid #000;
+
+/* Especificar estilos de borde individuales */
+border-width: 2px;
+border-color: #00ff00;
+border-style: dashed;
+```
+
+---
+
+`Display`
+
+```css
+/* Mostrar como bloque */
+display: block;
+
+/* Mostrar como en línea */
+display: inline;
+
+/* Mostrar como en línea con bloque */
+display: inline-block;
+```
+
+---
+
+`Position`
+
+```css
+/* Posicionar de forma absoluta */
+position: absolute;
+
+/* Posicionar de forma relativa */
+position: relative;
+
+/* Posicionar de forma fija */
+position: fixed;
+```
+
+---
+
+`Float`
+
+```css
+/* Flotar a la izquierda */
+float: left;
+
+/* Flotar a la derecha */
+float: right;
+
+/* No flotar */
+float: none;
+```
+
+---
+
+## **EJEMPLO RESET "Es para aplicarselo al maquetado del archivo HTML y luego empezar hacer los cambios al CSS"**
+
+---
+
+```html
+//Muy importante si se va aplicar el reset tiene que ser antes de empezar a
+alterar el CSS, de lo contrario si se aplica despues se puede echar a perder
+esteticamente lo que ya esta hecho
+```
+
+---
+
+```css
+/* Reset CSS */
+
+/* Box model */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* End Reset CSS */
+```
+
+---
