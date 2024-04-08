@@ -145,7 +145,7 @@ color: #ff0000;
 font-family: Arial, sans-serif;
 ```
 
----
+---}
 
 `Background`
 
@@ -256,6 +256,30 @@ float: none;
 //Muy importante si se va aplicar el reset tiene que ser antes de empezar a
 alterar el CSS, de lo contrario si se aplica despues se puede echar a perder
 esteticamente lo que ya esta hecho
+```
+
+---
+
+```html
+% !todo lo que esta en un html es un dom % !selectores: cuerpo completo que son
+las etiquetas (tag) o sea el body el header el main etc... selectores de clase
+('.' es la manera de llamarlo)===(class)."las clases, estas si se pueden
+reutilizar, todo lo contrario a las id" id ('#' es la manera de
+llamarlo)===(id)."los id no se pueden repetir, debes ser unicos por cada
+elementos" css aplicar estilos % !primer metodo inadecuada 1 se puede editar con
+css dentro del mismo html, no es lo mas recomendable pero se puede hacer,
+simplemente dentro del cierre de las etiquetas se escribr (style), pero no es lo
+mas optimo, queda feo y no es eficiente % ! segundo metodo inadecuado 2 / pero
+no tanto dentro del mismo archivo html, pero entre el head y el body se pone una
+etiqueta (<style></style>) dentro de hay ya se pueden aplicar los selectores,
+tanto de etiqueta como id y clases, se puede aplicar estilos de esta manera pero
+no es la mas conveniente. % ?tercer metodo adecuado 3 / y el que se va usar
+generar un archivo externo con un nombre y el prefijo de css que es (.css) obvio
+con la devida conexion, que en el head se conecta con (<link
+  rel="stylesheet"
+  href="./index.css" />) //ubicacion del archivo o nombre regla 20min trabajo
+solo, sin nadie, si preguntar, sin internet, sin nada ni nadie, ya despues si no
+consigo la solucion ppreguntar
 ```
 
 ---
